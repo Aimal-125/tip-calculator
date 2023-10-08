@@ -1,0 +1,368 @@
+@font-face {
+	src: url(fonts/SpaceMono-Bold.ttf);
+	src: url(fonts/SpaceMono-BoldItalic.ttf);
+	src: url(fonts/SpaceMono-Italic.ttf);
+	src: url(fonts/SpaceMono-Regular.ttf);
+	font-family: "SpaceMono";
+}
+html {
+	scroll-behavior: smooth;
+}
+*, *::before, *::after {
+	margin: 0;
+	padding: 0;
+}
+* {
+	box-sizing: border-box;
+	font-family: "SpaceMono";
+}
+.container {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background: hsl(185, 41%, 84%);
+	gap: 4vh;
+}
+.miniContainer {
+	width: 85%;
+	min-height: 65vh;
+	border-radius: 2vh;
+	display: flex;
+	padding: 4vh;
+	gap: 4vh;
+	background: white;
+}
+.logo {
+	width: 7%;
+}
+.logo img {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.div1, .div2 {
+	width: 50%;
+}
+.billDiv p {
+	padding-bottom: 1vh;
+	font-size: 2vh;
+}
+.billAmountDiv {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.billAmount {
+	width: 100%;
+	text-align: right;
+	font-size: 2.5vh;
+	font-weight: bold;
+	padding: 1vh 2vh;
+	background: url(images/icon-dollar.svg) no-repeat hsl(189, 41%, 97%);
+	background-size: 2vh;
+	background-position: 1vh center;
+	border: none;
+	border-radius: 1vh;
+	color: hsl(183, 100%, 15%);
+}
+.billAmount:focus {
+	outline: 2px solid hsl(172, 67%, 45%);
+}
+.selectTipDiv {
+	padding-top: 3vh;
+}
+.selectTipDiv p {
+	padding-bottom: 2vh;
+	font-size: 2vh;
+}
+.percentageDiv {
+	display: grid;
+	grid-template-rows: auto auto;
+	grid-template-columns: 30% 30% 30%;
+	justify-content: start;
+	grid-gap: 2vh; 
+}
+.percentageDiv input[type="radio"] {
+	display: block;
+	appearance: none;
+	border: none;
+	width: 100%;
+	height: 7vh;
+	padding: 1vh;
+	cursor: pointer;
+	font-size: 2.5vh;
+	font-weight: 600;
+	color: white;
+	background: hsl(183, 100%, 15%);
+	transition: 0.3s;
+	border-radius: 5px;
+	position: relative;
+}
+.p1::after {
+	position: absolute;
+	content: "5%";
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+}
+.p2::after {
+	position: absolute;
+	content: "10%";
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+}
+.p3::after {
+	position: absolute;
+	content: "15%";
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+}
+.p4::after {
+	position: absolute;
+	content: "25%";
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+}
+.p5::after {
+	position: absolute;
+	content: "50%";
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+}
+.percentageDiv .focused {
+	background: hsl(172, 67%, 45%) !important;
+	color: hsl(183, 100%, 15%) !important;
+}
+.percentageDiv input[type="radio"]:hover {
+	background: hsl(172, 67%, 80%);
+	color: hsl(183, 100%, 15%);
+}
+.customAmount {
+	width: 100%;
+	height: 100%;
+	display: block;
+	text-align: center;
+	font-size: 2.5vh;
+	font-weight: 600;
+	border: none;
+	color: hsl(183, 100%, 15%);
+	background: hsl(189, 41%, 97%);
+	border-radius: 5px;
+}
+.customAmount:focus {
+	outline: 2px solid hsl(172, 67%, 45%);
+}
+.peopleDiv {
+	padding-top: 5vh;
+}
+.peopleDiv p {
+	font-size: 2vh;
+	padding-bottom: 1vh;
+}
+.personAmount {
+	width: 100%;
+	text-align: right;
+	font-size: 2.5vh;
+	font-weight: 600;
+	padding: 1vh 2vh;
+	background: url(images/icon-person.svg) no-repeat hsl(189, 41%, 97%);
+	background-size: 2vh;
+	background-position: 1vh center;
+	border: none;
+	border-radius: 1vh;
+	color: hsl(183, 100%, 15%);
+}
+.personAmount:focus {
+	outline: 2px solid hsl(172, 67%, 45%);
+}
+.div2 {
+	border-radius: 1.5vh;
+	background: hsl(183, 100%, 15%);
+	padding: 5vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.tipAmountDiv {
+	margin-top: 3vh;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.tipText {
+	color: white;
+	font-weight: bold;
+	font-size: 2vh;
+}
+.tipAmountText span {
+	font-size: 2vh;
+	color: hsl(184, 14%, 56%);
+}
+.tipAmount {
+	font-size: 4vh;
+	font-weight: bold;
+	color: hsl(172, 67%, 45%);
+}
+#reset {
+	display: block;
+	width: 100%;
+	border: none;
+	font-size: 3vh;
+	padding: 1vh;
+	border-radius: 5px;
+	font-weight: bold;
+	background: rgba(0, 255, 255, 0.15);
+	color: hsl(183, 100%, 15%);
+	cursor: pointer;
+	transition: 0.3s;
+}
+#reset:hover {
+	background: hsl(172, 67%, 80%);
+}
+.resetButtonDiv .reset {
+	background: hsl(172, 67%, 45%) !important;
+}
+.textWrapper {
+	display: flex;
+	justify-content: space-between;
+}
+.error1, .error2, .error3 {
+	font-size: 2vh;
+	color: mediumvioletred;
+	text-align: right;
+}
+.peopleDiv .border {
+	outline: 2px solid mediumvioletred;
+}
+.percentageDiv .enter {
+	background: hsl(172, 67%, 45%) !important;
+	color: hsl(183, 100%, 15%) !important;
+}
+
+@media screen and (max-height: 450px) {
+	.billDiv p {
+		font-size: 3vh;
+	}
+	.billAmount {
+		font-size: 4vh;
+		background-size: 3vh;
+	}
+	.selectTipDiv p {
+		font-size: 3vh;
+	}
+	.percentageDiv input[type="radio"] {
+		font-size: 4vh;
+		height: 10vh;
+	}
+	.customAmount {
+		font-size: 4vh;
+	}
+	.peopleDiv p {
+		font-size: 3vh;
+	}
+	.personAmount {
+		font-size: 4vh;
+		background-size: 3vh;
+	}
+	.tipText {
+		font-size: 4vh;
+	}
+	.tipAmountText span {
+		font-size: 4vh;
+	}
+	.tipAmount {
+		font-size: 8vh;
+	}
+	#reset {
+		font-size: 5vh;
+	}
+	.error2 {
+		font-size: 3vh;
+	}
+}
+
+@media screen and (orientation: portrait) {
+	.container {
+		gap: 3vh;
+		justify-content: space-between;
+	}
+	.miniContainer {
+		width: 100%;
+		min-height: initial;
+		border-radius: 3vh 3vh 0 0;
+		display: flex;
+		flex-direction: column;
+		padding: 4vh;
+	}
+	.logo {
+		width: 20%;
+		margin-top: 3vh;
+	}
+	.div1, .div2 {
+		width: 100%;
+	}
+	.div2 {
+		padding: 3vh;
+	}
+	.billDiv p {
+		font-size: 2vh;
+	}
+	.billAmount {
+		font-size: 2vh;
+		background-size: 2vh;
+	}
+	.selectTipDiv p {
+		font-size: 2vh;
+	}
+	.percentageDiv {
+		grid-template-rows: auto auto auto;
+		grid-template-columns: 47% 47%;
+	}
+	.percentageDiv input[type="radio"] {
+		font-size: 2.5vh;
+		height: 5vh;
+	}
+	.customAmount {
+		font-size: 2.5vh;
+	}
+	.peopleDiv {
+		padding-top: 3vh;
+	}
+	.peopleDiv p {
+		font-size: 2vh;
+	}
+	.personAmount {
+		font-size: 2vh;
+		background-size: 2vh;
+	}
+	.tipAmountDiv {
+		margin-top: 1.5vh;
+	}
+	.tipText {
+		font-size: 1.5vh;
+	}
+	.tipAmountText span {
+		font-size: 1.5vh;
+	}
+	.tipAmount {
+		font-size: 4vh;
+	}
+	#reset {
+		font-size: 2vh;
+		margin-top: 2vh;
+	}
+	.error2 {
+		font-size: 2vh;
+	}
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Tip Calculator App using vanilla JavaScript, Frontend Mentor Tip Calculator App Responsive Solution">
+	<meta name="keywords" content="tip calculator app, tip calculator app using vanilla JavaScript, tip calculator app responsive solution">
+	<meta name="author" content="Aimal Khan">
+	<title>Frontend Mentor | Tip Calculator App</title>
+	<link rel="icon" type="image/x-icon" href="images/favicon-32x32.png">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<script src="ex.js" defer></script>
+</head>
+<body>
+	<main>
+		<div class="container">
+			<div class="logo">
+				<img src="images/logo.svg" alt="logo">
+			</div>
+			<div class="miniContainer">
+				<div class="div1">
+					<div class="billDiv">
+						<div class="textWrapper">
+							<p>Bill</p>
+							<div class="error1"></div>
+						</div>
+						<div class="billAmountDiv">
+							<input type="text" name="billAmount" class="billAmount" placeholder="Enter Bill Amount" tabindex="1">
+						</div>
+					</div>
+					<div class="selectTipDiv">
+						<div class="textWrapper">
+							<p>Select Tip %</p>
+							<div class="error3"></div>
+						</div>
+						<div class="percentageDiv">
+							<div><input type="radio" name="percentage1" class="btn p1" value="5" tabindex="2"></div>
+							<div><input type="radio" name="percentage2" class="btn p2" value="10" tabindex="3"></div>
+							<div><input type="radio" name="percentage3" class="btn p3" value="15" tabindex="4"></div>
+							<div><input type="radio" name="percentage4" class="btn p4" value="25" tabindex="5"></div>
+							<div><input type="radio" name="percentage5" class="btn p5" value="50" tabindex="6"></div>
+							<div><input type="text" name="customAmount" placeholder="Custom" class="customAmount" tabindex="9"></div>
+						</div>
+					</div>
+					<div class="peopleDiv">
+						<div class="textWrapper">
+							<p>Number of People</p>
+							<div class="error2"></div>
+						</div>
+						<div class="peopleAmountDiv">
+							<input type="text" name="personAmount" class="personAmount" placeholder="Enter People Number" tabindex="7">
+						</div>
+					</div>
+				</div>
+				<div class="div2">
+					<div class="wrapperDiv">
+						<div class="tipAmountDiv">
+							<div class="tipAmountText">
+								<p class="tipText">Tip Amount</p>
+								<span>/ person</span>
+							</div>
+							<p class="tipAmount" id="amount-per-person"></p>
+						</div>
+						<div class="tipAmountDiv">
+							<div class="tipAmountText">
+								<p class="tipText">Total Amount</p>
+								<span>/ person</span>
+							</div>
+							<p class="tipAmount" id="total-amount-per-person"></p>
+						</div>
+					</div>
+					<div class="resetButtonDiv">
+						<button type="button" id="reset" tabindex="8">RESET</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+</body>
+</html>
