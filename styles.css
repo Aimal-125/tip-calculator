@@ -82,7 +82,7 @@ html {
 	grid-template-rows: auto auto;
 	grid-template-columns: 30% 30% 30%;
 	justify-content: start;
-	grid-gap: 2vh; 
+	grid-gap: 2vh;
 }
 .percentageDiv input[type="radio"] {
 	display: block;
