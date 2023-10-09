@@ -251,50 +251,89 @@ html {
 }
 
 @media screen and (max-height: 450px) {
+	.container {
+		justify-content: space-between;	
+		gap: 10vh;
+		min-height: 100vh;
+	}
+	.miniContainer {
+		flex-direction: column;
+		border-radius: 3vh 3vh 0 0;
+		width: 100%;
+		gap: 30px;
+		padding: 30px;
+	}
+	.div1, .div2 {
+		width: 100%;
+	}
+	.div2 {
+		padding: 30px;
+	}
+	.logo {
+		margin-top: 10vh;
+		width: 20%;
+	}
+	.percentageDiv {
+		grid-template-rows: auto auto auto;
+		grid-template-columns: 48% 48%;
+		grid-gap: 12px;
+	}
 	.billDiv p {
-		font-size: 3vh;
+		font-size: 14px;
+		padding-bottom: 10px;
 	}
 	.billAmount {
-		font-size: 4vh;
-		background-size: 3vh;
+		font-size: 16px;
+		background-size: 12px;
+		padding: 10px 20px;
+		background-position: 20px center;
 	}
 	.selectTipDiv p {
-		font-size: 3vh;
+		font-size: 14px;
+		padding-bottom: 10px;
+		margin-top: 20px;
 	}
 	.percentageDiv input[type="radio"] {
-		font-size: 4vh;
-		height: 10vh;
+		font-size: 18px;
+		height: 50px;
 	}
 	.customAmount {
-		font-size: 4vh;
+		font-size: 16px;
 	}
 	.peopleDiv p {
-		font-size: 3vh;
+		font-size: 14px;
+		padding-bottom: 10px;
 	}
 	.personAmount {
-		font-size: 4vh;
-		background-size: 3vh;
+		font-size: 16px;
+		background-size: 12px;
+		padding: 10px 20px;
+		background-position: 20px center;
+	}
+	.tipAmountDiv {
+		margin-top: 10px;
 	}
 	.tipText {
-		font-size: 4vh;
+		font-size: 16px;
 	}
 	.tipAmountText span {
-		font-size: 4vh;
+		font-size: 14px;
 	}
 	.tipAmount {
-		font-size: 8vh;
+		font-size: 35px;
 	}
 	#reset {
-		font-size: 5vh;
+		font-size: 25px;
+		margin-top: 20px;
 	}
 	.error2 {
-		font-size: 3vh;
+		font-size: 14px;
 	}
 }
 
 @media screen and (orientation: portrait) {
 	.container {
-		gap: 3vh;
+		gap: 10vh;
 		justify-content: space-between;
 	}
 	.miniContainer {
@@ -306,8 +345,8 @@ html {
 		padding: 4vh;
 	}
 	.logo {
-		width: 20%;
-		margin-top: 3vh;
+		width: 25%;
+		margin-top: 10vh;
 	}
 	.div1, .div2 {
 		width: 100%;
@@ -319,8 +358,10 @@ html {
 		font-size: 2vh;
 	}
 	.billAmount {
-		font-size: 2vh;
+		font-size: 2.2vh;
 		background-size: 2vh;
+		background-position: 2vh center;
+		padding: 1.5vh 2vh;
 	}
 	.selectTipDiv p {
 		font-size: 2vh;
@@ -331,36 +372,38 @@ html {
 	}
 	.percentageDiv input[type="radio"] {
 		font-size: 2.5vh;
-		height: 5vh;
+		height: 7vh;
 	}
 	.customAmount {
 		font-size: 2.5vh;
 	}
 	.peopleDiv {
-		padding-top: 3vh;
+		padding-top: 5vh;
 	}
 	.peopleDiv p {
 		font-size: 2vh;
 	}
 	.personAmount {
-		font-size: 2vh;
+		font-size: 2.2vh;
 		background-size: 2vh;
+		background-position: 2vh center;
+		padding: 1.5vh 2vh;
 	}
 	.tipAmountDiv {
-		margin-top: 1.5vh;
+		margin-top: 5vh;
 	}
 	.tipText {
-		font-size: 1.5vh;
+		font-size: 1.7vh;
 	}
 	.tipAmountText span {
-		font-size: 1.5vh;
+		font-size: 1.7vh;
 	}
 	.tipAmount {
-		font-size: 4vh;
+		font-size: 4.5vh;
 	}
 	#reset {
 		font-size: 2vh;
-		margin-top: 2vh;
+		margin-top: 4vh;
 	}
 	.error2 {
 		font-size: 2vh;
